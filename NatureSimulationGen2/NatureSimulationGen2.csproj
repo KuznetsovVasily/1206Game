@@ -52,10 +52,11 @@
     <Compile Include="Abiotic\Mountain.cs" />
     <Compile Include="Animal\Dolphin.cs" />
     <Compile Include="Abiotic\Rock.cs" />
+    <Compile Include="Global\FabricMethodAttribute.cs" />
     <Compile Include="Global\Gender.cs" />
     <Compile Include="Global\IBarrier.cs" />
     <Compile Include="Global\ICanEat.cs" />
-    <Compile Include="Global\Initialize\ManualInitializer.cs" />
+    <Compile Include="Global\Initializers\ManualInitializer.cs" />
     <Compile Include="Global\ICanReproduce.cs" />
     <Compile Include="Global\RandomHolder.cs" />
     <Compile Include="Global\RandomWrap.cs" />
@@ -80,7 +81,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
