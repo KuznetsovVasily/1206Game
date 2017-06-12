@@ -14,15 +14,8 @@ namespace NatureSimulationGen2
     {
         static void Main(string[] args)
         {
-            //AnimalFactoryRegistry builder = new AnimalFactoryRegistry();
-            //builder
-            //    .Register(typeof(Rabbit), (coords) => new Rabbit(coords.Item1, coords.Item2, g))
-            //    .Register(typeof(Dolphin), new DolphinBuilder())
-            //    .Register(typeof(Owl), new OwlBuilder())
-            //    .Register(typeof(Oak), new OakBuilder())
-            //    .Register(typeof(Rock), new RockBuilder());
             World world = new World(15, 15);
-            world = new ManualInitializer(world).InitializeWorld(/*builder*/);
+            world = new ManualInitializer(world).InitializeWorld();
             for (int i = 0; i < 99; i++)
             {
                 world.PreTurn();
@@ -88,7 +81,7 @@ namespace NatureSimulationGen2
 //            world.PrintEntityListExcludeMountain();
 //            Console.WriteLine();
 
-//            //I can check number of ducks 
+//            //I can check number of ducks
 //            if (world.NumberOfEntity != 2)
 //            {
 //                Console.WriteLine("Number of entities in the world is not equal 2");
@@ -151,7 +144,7 @@ namespace NatureSimulationGen2
 //            world.PreTurn();
 //            world.PrintEntityListExcludeMountain();
 
-//            //I can check number of owls 
+//            //I can check number of owls
 //            var owlNumber = world.NumberOfOwl;
 //            if (world.NumberOfOwl != 1)
 //            {
@@ -159,7 +152,7 @@ namespace NatureSimulationGen2
 //                Console.WriteLine(owlNumber);
 //            }
 
-//            //I can create some water on world with 
+//            //I can create some water on world with
 //            for (int i = 1; i < 5; i++)
 //            {
 //                for (int j = 1; j < 5; j++)
@@ -168,7 +161,7 @@ namespace NatureSimulationGen2
 //                }
 //            }
 
-//            //I can try create dolphin on ground with coord 14.14 and add it 
+//            //I can try create dolphin on ground with coord 14.14 and add it
 //            Dolphin dolphin = new Dolphin(14, 14, 1, Gender.Male);
 //            world.AddEntity(dolphin);
 
@@ -191,7 +184,7 @@ namespace NatureSimulationGen2
 //            //Dolphin maleDolphinOn2X2 = new Dolphin(2, 2, 1, Gender.Male, health: 200);
 //            //world.AddDolphin(maleDolphinOn2X2);
 
-//            //I wanna see two dolphins 
+//            //I wanna see two dolphins
 //            world.PreTurn();
 //            world.Turn();
 //            world.PrintEntityListExcludeMountain();
@@ -230,7 +223,7 @@ namespace NatureSimulationGen2
 //            world.PrintEntityListExcludeMountain();
 //            Console.WriteLine();
 
-//            //Dolphin swiming test 
+//            //Dolphin swiming test
 //            //for (int i = 0; i < 99; i++)
 //            //{
 //            //    world.PreTurn();

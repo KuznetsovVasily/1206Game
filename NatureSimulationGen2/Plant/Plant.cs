@@ -4,6 +4,7 @@ namespace NatureSimulationGen2.Plant
 {
     public abstract class Plant : Entity
     {
+        public const int MaxHealth = 25;
         public int Health { get; set; }
         public bool IsFoodForVegan { get; set; }
         protected Plant(int x, int y, int health, World world, bool isFoodForVegan = true)

@@ -4,6 +4,7 @@ using NatureSimulationGen2.Global;
 
 namespace NatureSimulationGen2.Plant
 {
+    [FabricMethod("Plant")]
     public class Oak : Plant
     {
         protected static int RandomDelta { get; set; }

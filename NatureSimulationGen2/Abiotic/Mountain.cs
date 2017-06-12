@@ -3,6 +3,7 @@ using NatureSimulationGen2.Global;
 
 namespace NatureSimulationGen2.Abiotic
 {
+    [FabricMethod("Abiotic")]
     public class Mountain : Abiotic, IBarrier
     {
         public Mountain(int x, int y, World world)

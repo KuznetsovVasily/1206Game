@@ -5,6 +5,7 @@ using NatureSimulationGen2.Global;
 
 namespace NatureSimulationGen2.Animal
 {
+    [FabricMethod("Animal")]
     public class Rabbit : Animal, ICanEat, ICanReproduce
     {
         protected static int RandomDelta { get; set; }

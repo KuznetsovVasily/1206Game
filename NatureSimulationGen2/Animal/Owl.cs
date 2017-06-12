@@ -1,20 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NatureSimulationGen2.Global;
-using NatureSimulationGen2.Move;
 using System;
 
 namespace NatureSimulationGen2.Animal
 {
+    [FabricMethod("Animal")]
     public class Owl : Animal
     {
         protected static int RandomDelta { get; set; }
         protected int Timer { get; set; }
         public bool Predator { get; set; }
-        public Owl(int x, int y, Gender gender, ConsumptionType consumptionType, World world, bool predator = true)
+        public Owl(int x, int y, Gender gender, ConsumptionType consumptionType, World world)
             : base(x, y, gender, consumptionType, world)
         {
-            Predator = predator;
+            Predator = consumptionType == ConsumptionType.Predator;
             this.world = world;
         }
         public override List<SurfaceType> GetSurfaces()

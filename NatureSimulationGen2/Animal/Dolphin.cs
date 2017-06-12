@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using NatureSimulationGen2.Global;
-using NatureSimulationGen2.Move;
 
 namespace NatureSimulationGen2.Animal
 {
+    [FabricMethod("Animal")]
     public class Dolphin : Animal
     {
         protected static int RandomDelta { get; set; }
